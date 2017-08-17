@@ -206,14 +206,21 @@ h2{
 	color: #4867aa;
 }
 
+*{
+	scroll-behavior: auto;
+	scroll-behavior: smooth;
+}
 
+nav .nav a {
+	font-size: 16px;
+}
 
 /* BANNER */
 #banner{
 	background: url('../img/banner.jpg');
 	background-size: cover;
 	background-position: center;
-
+	background-attachment: fixed;
 }
 #banner .banner{
 	background-color: rgba(17, 24, 40,.6);
@@ -224,8 +231,8 @@ h2{
 }
 
 #banner .banner-content{
-	padding-top: 2%;
-	padding-bottom: 4%;
+	padding-top: 4%;
+	padding-bottom: 6%;
 	/*margin-top: 50px;*/
 	/*width: 70%;
 	margin: 0 auto;*/
@@ -250,6 +257,70 @@ h2{
 #banner .banner-btn {
 
 }
+
+#howitworks .howitworks-wrap .item {
+	margin: 20px 0;
+}
+
+.component {
+	opacity: 0;
+}
+
+.component.show {
+	animation-name: component_show;
+	animation-delay: 0.1s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.component.show_2 {
+	animation-name: component_show_2;
+	animation-delay: 0.3s;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
+}
+
+.component.show_shift {
+	animation-name: component_show_shift;
+	animation-delay: 0.3s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes component_show {
+	0% {
+		opacity: 0;
+		transform: scale(0, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes component_show_2 {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes component_show_shift {
+	0% {
+		opacity: 0;
+		margin-top: -50px;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
 
 .team-wrap .item img {
 	width: 100%;
