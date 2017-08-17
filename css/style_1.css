@@ -398,8 +398,11 @@ footer {
 footer hr {
 	border-top: 1px solid rgba(255,255,255,.1);
 }
+footer .contact-us .icon {
+	margin-right: 1em;
+}
 
-footer .legal {
+footer .contact-us {
 	color: #eee;
 	text-align: center;
 }

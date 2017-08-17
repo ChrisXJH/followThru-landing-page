@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FolloThru - Web-based reminder application</title>
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
             <h1>FolloThru - Friendly Web-based reminder application</h1>
             <p>Designed using insights from behavioral science. Our goal is to help users follow through on their goals. We take an evidence based, user-first approach to this problem.</p>
           </div>
-          <p class="component_fade"><a class="btn btn-danger btn-lg banner-btn" href="https://artsresearch.uwaterloo.ca/~efrisko6/signup.php" role="button">Sign Up Now</a></p>
+          <!-- <p class="component_fade"><a class="btn btn-danger btn-lg banner-btn" href="https://artsresearch.uwaterloo.ca/~efrisko6/signup.php" role="button">Sign Up Now</a></p> -->
         </div>
       </div>
     </div>
@@ -156,7 +156,7 @@
 
   <footer>
     <div class="container">
-      <p class="legal">© 2017 FolloThru. All rights reserved.</p>
+      <p class="contact-us"><span class="glyphicon glyphicon-envelope icon"></span> follothru@hotmail.com</p>
     </div>
   </footer>
 
@@ -165,9 +165,12 @@
   <script type="text/javascript" src="./js/page.class.js"></script>
   <script type="text/javascript" src="./js/functions.js"></script>
   <script type="text/javascript">
-  new Page($("#banner"));
-  new Page($("#howitworks"));
-  new Page($("#team"));
+  $(window).ready(function () {
+    new Page($("#banner"));
+    new Page($("#howitworks"));
+    new Page($("#team"));
+    $(this).scroll();
+  });
 
   </script>
 </body>
