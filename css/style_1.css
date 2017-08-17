@@ -263,13 +263,10 @@ nav .nav a {
 	margin: 20px 0;
 }
 
-.component_zoom_in, .component_shift_down_1, .component_shift_down_2, .component_fade {
+.component_zoom_in, .component_shift_down_1, .component_shift_down_2, .component_shift_down_2_slow, .component_fade {
 	opacity: 0;
 }
 
-.component_shift_down_2 {
-	position: relative;
-}
 
 .show-components .component_zoom_in {
 	animation-name: component_zoom_in;
@@ -280,24 +277,36 @@ nav .nav a {
 
 .show-components .component_fade {
 	animation-name: component_fade;
-	animation-delay: 0.3s;
+	animation-delay: 0.2s;
 	animation-duration: 0.6s;
 	animation-fill-mode: forwards;
 }
 
 .show-components .component_shift_down_1 {
 	animation-name: component_shift_down_1;
-	animation-delay: 0.3s;
+	animation-delay: 0.2s;
 	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
 }
 
 .show-components .component_shift_down_2 {
+	animation-delay: 0.2s;
+}
+
+.show-components .component_shift_down_2_slow {
+	animation-delay: 0.6s;
+}
+
+.show-components .component_shift_down_2_slow, .show-components .component_shift_down_2 {
+	position: relative;
 	animation-name: component_shift_down_2;
-	animation-delay: 0.8s;
-	animation-duration: 0.6s;
+		animation-duration: 0.6s;
 	animation-fill-mode: forwards;
 }
+
+
+
+
 
 @keyframes component_zoom_in {
 	0% {
