@@ -4,6 +4,17 @@
 	font-family: 'Ebrima';
 }
 
+
+.unselectable {
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
+.unselectable h1, .unselectable h2, .unselectable h3, .unselectable h4, .unselectable h5, .unselectable p {
+	cursor: default;
+}
+
 /* COMMON */
 .align-center{
 	text-align: center;
