@@ -37,7 +37,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#howitworks">How it works</a></li>
                 <li><a href="#team">About us</a></li>
-                <li><a href="https://artsresearch.uwaterloo.ca/~efrisko6/login.php">Log in</a></li>
+                <li><a href="#contact">Contact us</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -49,7 +49,7 @@
       <div class="container banner-content">
         <div class="jumbotron align-center">
           <div class="component_shift_down_1">
-            <h1>FolloThru - Friendly Web-based reminder application</h1>
+            <h1 class="title">FolloThru - Friendly Web-based reminder application</h1>
             <p>Designed using insights from behavioral science. Our goal is to help users follow through on their goals. We take an evidence based, user-first approach to this problem.</p>
           </div>
           <!-- <p class="component_fade"><a class="btn btn-danger btn-lg banner-btn" href="https://artsresearch.uwaterloo.ca/~efrisko6/signup.php" role="button">Sign Up Now</a></p> -->
@@ -70,25 +70,25 @@
       <div class="row margin-top-larger howitworks-wrap">
 
         <div class="col-md-4 item">
-          <div class="align-center component_shift_down_2">
+          <div class="align-center component_zoom_in">
             <i class="fa fa-5x fa-comments color_2" aria-hidden="true"></i>
-            <h4 class="margin-top-normal color_3">Instructors set up the reminders for their course</h4>
+            <h4 class="margin-top-large">Instructors set up the reminders for their course</h4>
           </div>
-          <!-- <p class="margin-top-small paragraph color_3 width-small margin-center">We believe getting a good education that is in line with your career goal is a great investment and helps you succeed. If you want someone who will know you better than yourself and consider your future success as their own, consult us. We know edcuation and people to the core.</p> -->
+          <!-- <p class="margin-top-small paragraph width-small margin-center">We believe getting a good education that is in line with your career goal is a great investment and helps you succeed. If you want someone who will know you better than yourself and consider your future success as their own, consult us. We know edcuation and people to the core.</p> -->
         </div>
 
         <div class="col-md-4 item">
-          <div class="align-center component_shift_down_2">
+          <div class="align-center component_zoom_in">
             <i class="fa fa-5x fa-users color_2" aria-hidden="true"></i>
-            <h4 class="margin-top-normal color_3">Students sign up in order to receive reminders</h4>
+            <h4 class="margin-top-large">Students sign up in order to receive reminders</h4>
           </div>
-          <!-- <p class="margin-top-small paragraph color_3 width-small margin-center">We will help you answeres the 3 fundimental questions: Who Am I?/Where Am I Going?/How Can I Get there? We have spent over 10 years, coaching individuals just like you to gain confidence and achieve life goals, Faster!</p> -->
+          <!-- <p class="margin-top-small paragraph width-small margin-center">We will help you answeres the 3 fundimental questions: Who Am I?/Where Am I Going?/How Can I Get there? We have spent over 10 years, coaching individuals just like you to gain confidence and achieve life goals, Faster!</p> -->
         </div>
 
         <div class="col-md-4 item">
-          <div class="align-center component_shift_down_2">
+          <div class="align-center component_zoom_in">
             <i class="fa fa-5x fa-users color_2" aria-hidden="true"></i>
-            <h4 class="margin-top-normal color_3">Reminder emails arrive in student’s inboxes throughout the course</h4>
+            <h4 class="margin-top-large">Reminder emails arrive in student’s inboxes throughout the course</h4>
           </div>
           <!-- <p class="margin-top-small paragraph color_3 width-small margin-center">We will help you answeres the 3 fundimental questions: Who Am I?/Where Am I Going?/How Can I Get there? We have spent over 10 years, coaching individuals just like you to gain confidence and achieve life goals, Faster!</p> -->
         </div>
@@ -146,19 +146,34 @@
                 <h5 class="position-caption">UI Designer</h5>
               </div>
             </div>
-
           </div>
+
+          <div class="advisors group">
+            <div class="row">
+              <div class="col-xs-12 col-md-12">
+                <a href="javascript:;" class="item component_zoom_in">
+                  <img src="./img/kristin.png" alt="...">
+                </a>
+                <div class="caption component_shift_down_2_slow">
+                  <h3 class="name-caption">Kristin E. Wilson</h3>
+                  <h5 class="position-caption">Advisor</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
     </div>
   </section>
 
-  <footer>
+  <section id="contact">
     <div class="container">
-      <p class="contact-us"><span class="glyphicon glyphicon-envelope icon"></span> follothru@hotmail.com</p>
+      <p class="align-center component_shift_down_2"><a href="mailto:follothru@hotmail.com" target="_blank" class="contact-us-btn">Contact us: follothru@hotmail.com</a></p>
+      <!-- <p class="email"><span class="glyphicon glyphicon-envelope icon"></span> follothru@hotmail.com</p> -->
     </div>
-  </footer>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -169,6 +184,7 @@
     new Page($("#banner"));
     new Page($("#howitworks"));
     new Page($("#team"));
+    new Page($("#contact"));
     $(this).scroll();
   });
 

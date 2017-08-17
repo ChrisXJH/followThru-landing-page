@@ -1,6 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	font-family: 'Ebrima';
 }
 
 /* COMMON */
@@ -78,7 +79,7 @@ h2{
 	color: #95bee3;
 }
 .color_3{
-	color: #19243a;
+	color: #4c4c4c;
 }
 .color_4{
 	color: #111828;
@@ -206,10 +207,6 @@ h2{
 	color: #4867aa;
 }
 
-*{
-	scroll-behavior: auto;
-	scroll-behavior: smooth;
-}
 
 nav .nav a {
 	font-size: 16px;
@@ -227,6 +224,7 @@ nav .nav a {
 	background-color: rgba(17, 24, 40,.6);
 }
 
+
 #banner .navbar-brand img {
 	height: 40px;
 }
@@ -239,13 +237,16 @@ nav .nav a {
 	margin: 0 auto;*/
 }
 #banner .banner-content h1{
-	font-size: 30px;
-	font-weight: 400;
+	/*font-size: 30px;*/
+	/*font-weight: bold;*/
+	/*font-size: 48px;*/
 	margin-bottom: 20px;
+	letter-spacing: 1px;
+
 }
-#banner .banner-content h3{
-	font-size:19px;
-	font-weight: 200;
+#banner .banner-content p{
+	margin-top: 1em;
+	word-spacing: 1px;
 }
 #banner .banner-content .banner-btn{
 	margin-top: 2em;
@@ -300,7 +301,7 @@ nav .nav a {
 .show-components .component_shift_down_2_slow, .show-components .component_shift_down_2 {
 	position: relative;
 	animation-name: component_shift_down_2;
-		animation-duration: 0.6s;
+	animation-duration: 0.6s;
 	animation-fill-mode: forwards;
 }
 
@@ -386,25 +387,47 @@ nav .nav a {
 	margin-top: 2em;
 }
 
-footer p {
-	margin: 0;
+#contact p {
+	display: inline-block;
+	width: 100%;
 }
 
-footer {
-	padding: 30px 0;
+#contact {
+	padding: 100px 0;
 	background-color: #323a45;
 }
 
-footer hr {
+#contact hr {
 	border-top: 1px solid rgba(255,255,255,.1);
 }
-footer .contact-us .icon {
+#contact .contact-us .icon {
 	margin-right: 1em;
 }
 
-footer .contact-us {
-	color: #eee;
+#contact .contact-us {
+	color: #ccc;
+	letter-spacing: 1px;
+	font-size: 18px;
 	text-align: center;
+	color: #95bee3;
+}
+
+#contact .contact-us-btn {
+	transition: 0.2s;
+	padding: 1em 4em;
+	border: 2px solid #95bee3;
+	background-color: transparent;
+	/*text-transform: uppercase;*/
+	letter-spacing: 1px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #95bee3;
+	border-radius: 2em;
+}
+
+#contact .contact-us-btn:hover {
+	background-color: #95bee3;
+	color: #fff;
 }
 
 
