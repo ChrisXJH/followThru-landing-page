@@ -12,9 +12,7 @@ Page.prototype.bind_events = function () {
   var self = this;
   $(window).scroll(function() {
     if(isScrolledIntoView(self.elem)) {
-      for (var i = 0; i < self.components.length; i++) {
-        self.components[i].show();
-      }
+      self.elem.addClass("show-components");
     }
   });
 };

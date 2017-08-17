@@ -263,44 +263,59 @@ nav .nav a {
 	margin: 20px 0;
 }
 
-.component {
+.component_zoom_in, .component_shift_down_1, .component_shift_down_2, .component_fade {
 	opacity: 0;
 }
 
-.component.show {
-	animation-name: component_show;
-	animation-delay: 0.1s;
-	animation-duration: 0.5s;
+.component_shift_down_2 {
+	position: relative;
+}
+
+.show-components .component_zoom_in {
+	animation-name: component_zoom_in;
+	animation-delay: 0.2s;
+	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
 }
 
-.component.show_2 {
-	animation-name: component_show_2;
+.show-components .component_fade {
+	animation-name: component_fade;
+	animation-delay: 0.3s;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
+
+.show-components .component_shift_down_1 {
+	animation-name: component_shift_down_1;
 	animation-delay: 0.3s;
 	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
 }
 
-.component.show_shift {
-	animation-name: component_show_shift;
-	animation-delay: 0.3s;
-	animation-duration: 1s;
+.show-components .component_shift_down_2 {
+	animation-name: component_shift_down_2;
+	animation-delay: 0.8s;
+	animation-duration: 0.6s;
 	animation-fill-mode: forwards;
 }
 
-@keyframes component_show {
+@keyframes component_zoom_in {
 	0% {
 		opacity: 0;
 		transform: scale(0, 0);
 	}
 
+	60% {
+		opacity: 1;
+		transform: scale(1.2,1.2);
+	}
 	100% {
 		opacity: 1;
 		transform: scale(1, 1);
 	}
 }
 
-@keyframes component_show_2 {
+@keyframes component_fade {
 	0% {
 		opacity: 0;
 	}
@@ -310,7 +325,7 @@ nav .nav a {
 	}
 }
 
-@keyframes component_show_shift {
+@keyframes component_shift_down_1 {
 	0% {
 		opacity: 0;
 		margin-top: -60px;
@@ -318,7 +333,19 @@ nav .nav a {
 
 	100% {
 		opacity: 1;
-		margin-top: 0;
+		margin-top: '';
+	}
+}
+
+@keyframes component_shift_down_2 {
+	0% {
+		opacity: 0;
+		top: -60px;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
 	}
 }
 

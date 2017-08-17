@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FolloThru</title>
+  <title>FolloThru - Web-based reminder application</title>
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style_1.css">
@@ -12,10 +12,10 @@
 
 
   <!-- Banner Section -->
-  <section id="banner">
+  <section id="banner" class="show-components">
     <div class="container-fluid banner color-white" style="overflow: hidden;">
       <div class="container">
-        <nav class="navbar navbar-default component show_2">
+        <nav class="navbar navbar-default component_fade">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -35,7 +35,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#howitworks">How it works</a></li>
                 <li><a href="#team">About us</a></li>
-                <li><a href="https://artsresearch.uwaterloo.ca/~efrisko6">Log in</a></li>
+                <li><a href="https://artsresearch.uwaterloo.ca/~efrisko6/login.php">Log in</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -44,13 +44,13 @@
 
 
 
-      <div class="container banner-content component show_2">
+      <div class="container banner-content">
         <div class="jumbotron align-center">
-          <div class="component show_shift">
+          <div class="component_shift_down_1">
             <h1>FolloThru - Friendly Web-based reminder application</h1>
             <p>Designed using insights from behavioral science. Our goal is to help users follow through on their goals. We take an evidence based, user-first approach to this problem.</p>
           </div>
-          <p class="component show_2"><a class="btn btn-danger btn-lg banner-btn jump" href="https://artsresearch.uwaterloo.ca/~efrisko6/dev/signup.php" role="button">Sign Up Now</a></p>
+          <p class="component_fade"><a class="btn btn-danger btn-lg banner-btn" href="https://artsresearch.uwaterloo.ca/~efrisko6/signup.php" role="button">Sign Up Now</a></p>
         </div>
       </div>
     </div>
@@ -67,26 +67,26 @@
 
       <div class="row margin-top-larger howitworks-wrap">
 
-        <div class="col-md-4 item component">
+        <div class="col-md-4 item">
           <div class="align-center">
-            <i class="fa fa-5x fa-comments color_2" aria-hidden="true"></i>
-            <h4 class="margin-top-normal color_3">Instructors set up the reminders for the course</h4>
+            <i class="fa fa-5x fa-comments color_2 component_zoom_in" aria-hidden="true"></i>
+            <h4 class="margin-top-normal color_3 component_shift_down_2">Instructors set up the reminders for the course</h4>
           </div>
           <!-- <p class="margin-top-small paragraph color_3 width-small margin-center">We believe getting a good education that is in line with your career goal is a great investment and helps you succeed. If you want someone who will know you better than yourself and consider your future success as their own, consult us. We know edcuation and people to the core.</p> -->
         </div>
 
-        <div class="col-md-4 item component">
+        <div class="col-md-4 item">
           <div class="align-center">
-            <i class="fa fa-5x fa-users color_2" aria-hidden="true"></i>
-            <h4 class="margin-top-normal color_3">Students register in order to receive reminders</h4>
+            <i class="fa fa-5x fa-users color_2 component_zoom_in" aria-hidden="true"></i>
+            <h4 class="margin-top-normal color_3 component_shift_down_2">Students register in order to receive reminders</h4>
           </div>
           <!-- <p class="margin-top-small paragraph color_3 width-small margin-center">We will help you answeres the 3 fundimental questions: Who Am I?/Where Am I Going?/How Can I Get there? We have spent over 10 years, coaching individuals just like you to gain confidence and achieve life goals, Faster!</p> -->
         </div>
 
-        <div class="col-md-4 item component">
+        <div class="col-md-4 item">
           <div class="align-center">
-            <i class="fa fa-5x fa-users color_2" aria-hidden="true"></i>
-            <h4 class="margin-top-normal color_3">Reminders will be sent to students accordingly</h4>
+            <i class="fa fa-5x fa-users color_2 component_zoom_in" aria-hidden="true"></i>
+            <h4 class="margin-top-normal color_3 component_shift_down_2">Reminders will be sent to students accordingly</h4>
           </div>
           <!-- <p class="margin-top-small paragraph color_3 width-small margin-center">We will help you answeres the 3 fundimental questions: Who Am I?/Where Am I Going?/How Can I Get there? We have spent over 10 years, coaching individuals just like you to gain confidence and achieve life goals, Faster!</p> -->
         </div>
@@ -104,7 +104,7 @@
       <div class="team-wrap margin-top-larger">
         <div class="supervisors group">
           <div class="row">
-            <div class="col-md-12 component">
+            <div class="col-md-12 component_zoom_in">
               <a href="javascript:;" class="item">
                 <img src="./img/efrisko.png" alt="...">
               </a>
@@ -117,7 +117,7 @@
         </div>
         <div class="developers group">
           <div class="row">
-            <div class="col-xs-12 col-md-6 component">
+            <div class="col-xs-12 col-md-6 component_zoom_in">
               <a href="javascript:;" class="item">
                 <img src="./img/andy.jpg" alt="...">
               </a>
@@ -126,7 +126,7 @@
                 <h5 class="position-caption">Developer</h5>
               </div>
             </div>
-            <div class="col-xs-12 col-md-6 component">
+            <div class="col-xs-12 col-md-6 component_zoom_in">
               <a href="javascript:;" class="item">
                 <img src="./img/jianhao.jpg" alt="...">
               </a>
@@ -150,6 +150,7 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./js/component.class.js"></script>
   <script type="text/javascript" src="./js/page.class.js"></script>
   <script type="text/javascript" src="./js/functions.js"></script>
