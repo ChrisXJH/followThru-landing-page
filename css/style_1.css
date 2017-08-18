@@ -269,72 +269,71 @@ nav .nav a {
 	line-height: 1.4em;
 }
 
-#banner .banner-btn {
-
-}
-
 #howitworks .howitworks-wrap .item {
 	margin: 20px 0;
 }
 
-.component_zoom_in, .component_shift_down_1, .component_shift_down_2, .component_shift_down_2_slow, .component_fade {
+.component {
 	opacity: 0;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 }
 
+.component_title_1.show {
+	animation-name: component_title_1;
+	animation-delay: 0.2s;
+	animation-duration: 0.8s;
+}
 
-.show-components .component_zoom_in {
+.component_zoom_in.show {
 	-webkit-animation-name: component_zoom_in;
-	        animation-name: component_zoom_in;
+	animation-name: component_zoom_in;
 	-webkit-animation-delay: 0.2s;
-	        animation-delay: 0.2s;
+	animation-delay: 0.2s;
 	-webkit-animation-duration: 0.8s;
-	        animation-duration: 0.8s;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-duration: 0.8s;
 }
 
-.show-components .component_fade {
+.component_fade.show {
 	-webkit-animation-name: component_fade;
-	        animation-name: component_fade;
+	animation-name: component_fade;
 	-webkit-animation-delay: 0.2s;
-	        animation-delay: 0.2s;
+	animation-delay: 0.2s;
 	-webkit-animation-duration: 0.6s;
-	        animation-duration: 0.6s;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-duration: 0.6s;
 }
 
-.show-components .component_shift_down_1 {
+.component_shift_down_1.show {
 	-webkit-animation-name: component_shift_down_1;
-	        animation-name: component_shift_down_1;
+	animation-name: component_shift_down_1;
 	-webkit-animation-delay: 0.2s;
-	        animation-delay: 0.2s;
+	animation-delay: 0.2s;
 	-webkit-animation-duration: 0.8s;
-	        animation-duration: 0.8s;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-duration: 0.8s;
 }
 
-.show-components .component_shift_down_2 {
+.component_shift_down_2.show {
 	-webkit-animation-delay: 0.2s;
-	        animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 
-.show-components .component_shift_down_2_slow {
+.component_shift_down_2_slow.show {
 	-webkit-animation-delay: 0.6s;
-	        animation-delay: 0.6s;
+	animation-delay: 0.6s;
 }
 
-.show-components .component_shift_down_2_slow, .show-components .component_shift_down_2 {
+.component_title_1, .component_shift_down_2_slow, .component_shift_down_2 {
 	position: relative;
-	-webkit-animation-name: component_shift_down_2;
-	        animation-name: component_shift_down_2;
-	-webkit-animation-duration: 0.6s;
-	        animation-duration: 0.6s;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
 }
 
+.component_shift_down_2_slow.show, .component_shift_down_2.show {
+	-webkit-animation-name: component_shift_down_2;
+	animation-name: component_shift_down_2;
+	-webkit-animation-duration: 0.6s;
+	animation-duration: 0.6s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
 
 
 
@@ -343,41 +342,51 @@ nav .nav a {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0, 0);
-		        transform: scale(0, 0);
+		transform: scale(0, 0);
 	}
 
 	60% {
 		opacity: 1;
 		-webkit-transform: scale(1.2,1.2);
-		        transform: scale(1.2,1.2);
+		transform: scale(1.2,1.2);
 	}
 	100% {
 		opacity: 1;
 		-webkit-transform: scale(1, 1);
-		        transform: scale(1, 1);
+		transform: scale(1, 1);
 	}
 }
 
 
 
+@keyframes component_title_1 {
+	0% {
+		opacity: 0;
+		top: -10px;
+	}
 
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
 
 @keyframes component_zoom_in {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0, 0);
-		        transform: scale(0, 0);
+		transform: scale(0, 0);
 	}
 
 	60% {
 		opacity: 1;
 		-webkit-transform: scale(1.2,1.2);
-		        transform: scale(1.2,1.2);
+		transform: scale(1.2,1.2);
 	}
 	100% {
 		opacity: 1;
 		-webkit-transform: scale(1, 1);
-		        transform: scale(1, 1);
+		transform: scale(1, 1);
 	}
 }
 
