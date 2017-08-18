@@ -30,8 +30,14 @@ $(window).ready(function () {
     scrollTop(0);
   });
 
+
+
+
+
   function scrollTop(top) {
     var root = $('html, body');
     root.animate({scrollTop:top + 'px'}, 500, function () {});
   }
+
+
 });

@@ -548,9 +548,10 @@ nav .nav a {
 	display: inline-block;
 }
 
+
 #scroll_to_top:hover {
 	transition: 0.1s;
-		opacity: 0.5;
+	opacity: 0.5;
 }
 
 #scroll_to_top .icon {
@@ -576,9 +577,6 @@ nav .nav a {
 	h4 {
 		font-size: 16px;
 	}
-	.section {
-		padding: 20px 0;
-	}
 	.margin-top-larger {
 		margin-top: 40px;
 	}
@@ -592,6 +590,9 @@ nav .nav a {
 	}
 	#banner p {
 		font-size: 16px;
+	}
+	#banner .navbar-brand img {
+		height: 30px;
 	}
 	#contact {
 		padding: 50px 0;
@@ -626,5 +627,8 @@ nav .nav a {
 	#contact .contact-us-btn {
 		padding: 1em 1em;
 		font-size: 12px;
+	}
+	.show-scrolltop #scroll_to_top {
+		display: none;
 	}
 }
