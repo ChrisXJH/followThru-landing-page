@@ -223,7 +223,10 @@ h2{
 
 nav .nav a {
 	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
+
 
 /* BANNER */
 #banner{
@@ -255,6 +258,7 @@ nav .nav a {
 	/*font-size: 48px;*/
 	margin-bottom: 20px;
 	letter-spacing: 1px;
+	line-height: 1.2em;
 
 }
 #banner .banner-content p{
