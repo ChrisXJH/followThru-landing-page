@@ -531,6 +531,33 @@ nav .nav a {
 }
 
 
+#scroll_to_top {
+	z-index: 1000;
+	display: none;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	background-color: #323a45;
+	padding: 0.8em 1em;
+	border-radius: 50%;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.show-scrolltop #scroll_to_top {
+	display: inline-block;
+}
+
+#scroll_to_top:hover {
+	transition: 0.1s;
+		opacity: 0.5;
+}
+
+#scroll_to_top .icon {
+	color: #fff;
+	font-size: 28px;
+}
+
 
 @media (max-width: 768px) {
 	html, body {
