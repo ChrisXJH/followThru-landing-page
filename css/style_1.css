@@ -280,9 +280,12 @@ nav .nav a {
 }
 
 .component_title_1.show {
-	animation-name: component_title_1;
-	animation-delay: 0.2s;
-	animation-duration: 0.8s;
+	-webkit-animation-name: component_title_1;
+	        animation-name: component_title_1;
+	-webkit-animation-delay: 0.2s;
+	        animation-delay: 0.2s;
+	-webkit-animation-duration: 0.8s;
+	        animation-duration: 0.8s;
 }
 
 .component_zoom_in.show {
@@ -354,6 +357,20 @@ nav .nav a {
 		opacity: 1;
 		-webkit-transform: scale(1, 1);
 		transform: scale(1, 1);
+	}
+}
+
+
+
+@-webkit-keyframes component_title_1 {
+	0% {
+		opacity: 0;
+		top: -10px;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
 	}
 }
 
@@ -540,7 +557,7 @@ nav .nav a {
 	background-color: #323a45;
 	padding: 0.8em 1em;
 	border-radius: 50%;
-	opacity: 0.3;
+	opacity: 0.4;
 	cursor: pointer;
 }
 
@@ -550,8 +567,9 @@ nav .nav a {
 
 
 #scroll_to_top:hover {
+	-webkit-transition: 0.1s;
 	transition: 0.1s;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 #scroll_to_top .icon {
