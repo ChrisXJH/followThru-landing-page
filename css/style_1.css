@@ -537,4 +537,67 @@ nav .nav a {
 		width: auto !important;
 		overflow-x: hidden !important;
 	}
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	.section {
+		padding: 20px 0;
+	}
+	.margin-top-larger {
+		margin-top: 40px;
+	}
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#banner .banner-content {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#banner p {
+		font-size: 16px;
+	}
+	#contact {
+		padding: 50px 0;
+	}
+	#contact .contact-us-btn {
+		padding: 1em 1em;
+		font-size: 16px;
+	}
+}
+
+
+@media (max-width: 420px) {
+	h1 {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	h4 {
+		font-size: 14px;
+	}
+	#banner .jumbotron {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	#banner p {
+		font-size: 12px;
+	}
+	#contact .contact-us-btn {
+		padding: 1em 1em;
+		font-size: 12px;
+	}
 }
