@@ -277,6 +277,11 @@ nav .nav a {
 	margin: 20px 0;
 }
 
+#howitworks .icon {
+	width: 100px;
+	height: 100px;
+}
+
 .component {
 	opacity: 0;
 	-webkit-animation-fill-mode: forwards;
